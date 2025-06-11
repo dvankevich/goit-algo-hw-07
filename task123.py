@@ -47,12 +47,6 @@ def right_rotate(y):
 
     return x
 
-def min_value_node(node):
-    current = node
-    while current.left is not None:
-        current = current.left
-    return current
-
 def insert(root, key):
     if not root:
         return AVLNode(key)
